@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %}CV - Aleksis Kaletovs{% endblock %}
+{% block content %}
+<h1>My CV</h1>
+<p>Here is my CV. You can view it online or download it.</p>
+<a href="{{ url_for('static', filename='cv.pdf') }}" class="btn btn-primary">Download CV</a>
+{% endblock %}
