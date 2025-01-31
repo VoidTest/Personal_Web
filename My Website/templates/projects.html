@@ -1,11 +1,32 @@
 {% extends "base.html" %}
 {% block title %}Projects - Aleksis Kaletovs{% endblock %}
 {% block content %}
-<h1>My Projects</h1>
-<p>Here are some of the projects I have worked on:</p>
-<ul>
-    <li>Project 1 - Description</li>
-    <li>Project 2 - Description</li>
-    <li>Project 3 - Description</li>
-</ul>
+<div class="text-center">
+  <h1>Projects</h1>
+  <p>Select a project to view its GitHub repository along with the creators.</p>
+  <div class="d-flex flex-column align-items-center">
+    <!-- Project 1 -->
+    <div class="mb-4">
+      <a href="https://github.com/yourusername/project1" target="_blank" class="btn btn-primary">
+        Project 1
+      </a>
+      <p class="mt-2">Created by: Alice, Bob</p>
+    </div>
+    <!-- Project 2 -->
+    <div class="mb-4">
+      <a href="https://github.com/yourusername/project2" target="_blank" class="btn btn-primary">
+        Project 2
+      </a>
+      <p class="mt-2">Created by: Charlie, Dana</p>
+    </div>
+    <!-- Project 3 -->
+    <div class="mb-4">
+      <a href="https://github.com/yourusername/project3" target="_blank" class="btn btn-primary">
+        Project 3
+      </a>
+      <p class="mt-2">Created by: Eve, Frank</p>
+    </div>
+  </div>
+  <p class="mt-2">Visit our GitHub repositories for more details.</p>
+</div>
 {% endblock %}
